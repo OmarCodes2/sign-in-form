@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="left_column">
+        <img src="zero.png">
+        <div>hello</div>
+    </div>
+
+
+
+    <div class="right_column">
+        <div>
+            "What do you do when there is an evil you cannot defeat by just means? 
+            Do you stain your hands with evil to destroy evil? Or do you remain steadfastly 
+            just and righteous even if it means surrendering to evil?""
+        </div>
+        <div>Join the Black Nights Today!</div>
+
+        <div>Come Fight Along Our Great Leader zero!</div>
+        <form>
+            <fieldset>
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" placeholder="First Name" required>
+        
+                <label for ="last_name">Last Name:</label>
+                <input type="text" id="last_name" placeholder="Last Name" required>
+            </fieldset>
+            <label for="user_email">Email Address:</label>
+            <input type="email" id="user_email" name="email" placeholder="you@example.com" required>
+        
+            <label for="user_phone">Phone Number:</label>
+            <input type="tel" id="user_phone" name="phone_number" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            <fieldset>
+                <label for="user_password">Password:</label>
+                <input type="password" id="user_password" name="password" required>
+                <label for="user_password_confirm">Confirm Password:</label>
+                <input type="password" id="user_password_confirm" name="password" required>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
