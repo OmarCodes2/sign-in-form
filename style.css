@@ -44,6 +44,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+* {
+    box-sizing: border-box;
+}
 
 /*
 MEYER Reset Done
@@ -53,4 +56,91 @@ body {
     flex-direction: row;
     background-color: black;
     color: white;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+
+}
+.left_column{
+    width: 40vw;
+}
+
+.right_column{
+    width: 55vw;
+    
+}
+.zero{
+    width: 100%;
+    height: 99.9vh;
+    object-fit: cover;
+    object-position: 0%,0%;
+}
+
+.quote{
+    /* font-size: ; */
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    word-wrap: break-word;
+    margin: 40px;
+    margin-top: 15vh;
+    text-align: left;
+}
+
+.subtitle{
+    font-family: 'Poppins', sans-serif;
+    margin-left: 40px;
+    font-size: 1.5rem;
+}
+
+button {
+    width: 12vw;
+    margin-top: 20px;
+    background-color:#4b184d; 
+    border-radius: 14px;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+
+    transition: .2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+
+}
+
+form{
+    margin-top: 20px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+input{
+    border: solid 2px white;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+    height: 5vh;
+    width: 20vw;
+}
+
+fieldset{
+    display: flex;
+    gap: 20px;
+
+}
+label{
+    margin: 0.5vw;
+    margin-bottom: 1vh;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

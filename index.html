@@ -6,46 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@400&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="left_column">
-        <img src="zero.png">
-        <div>hello</div>
-    </div>
+    
 
-
-
-    <div class="right_column">
-        <div>
-            "What do you do when there is an evil you cannot defeat by just means? 
-            Do you stain your hands with evil to destroy evil? Or do you remain steadfastly 
-            just and righteous even if it means surrendering to evil?""
+    <div class="content">
+        <div class="left_column">
+            <img class="zero" src="zero.png">
+            <!-- <div>hello</div> -->
         </div>
-        <div>Join the Black Nights Today!</div>
+        <div class="right_column">
+            <div class="quote">
+                What do you do when there is an evil you cannot defeat by just means?
+                Do you stain your hands with evil to destroy evil? Or do you remain steadfastly
+                just and righteous even if it means surrendering to evil?
+            </div>
 
-        <div>Come Fight Along Our Great Leader zero!</div>
-        <form>
-            <fieldset>
-                <label for="first_name">First Name:</label>
-                <input type="text" id="first_name" placeholder="First Name" required>
+            <div class="subtitle">
+                <div>Join the Black Nights Today</div>
+                <div>Come Fight Along Our Great Leader Zero</div>
+            </div>
+            <form>
+                <fieldset>
+                    <div class="group">
+                        <label for="first_name">First Name:</label><br />
+                        <input type="text" id="first_name" required>
+                    </div>
         
-                <label for ="last_name">Last Name:</label>
-                <input type="text" id="last_name" placeholder="Last Name" required>
-            </fieldset>
-            <label for="user_email">Email Address:</label>
-            <input type="email" id="user_email" name="email" placeholder="you@example.com" required>
-        
-            <label for="user_phone">Phone Number:</label>
-            <input type="tel" id="user_phone" name="phone_number" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-            <fieldset>
-                <label for="user_password">Password:</label>
-                <input type="password" id="user_password" name="password" required>
-                <label for="user_password_confirm">Confirm Password:</label>
-                <input type="password" id="user_password_confirm" name="password" required>
-            </fieldset>
-            <button type="submit">Submit</button>
-        </form>
+                    <div class="group">
+                        <label for ="last_name">Last Name:</label><br />
+                        <input type="text" id="last_name" placeholder required>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <div class="group">
+                        <label for=" user_email">Email Address:</label><br />
+                        <input type="email" id="user_email" name="email" placeholder="  you@example.com" required>
+                    </div>
+                    <div class="group">
+                        <label for="user_phone">Phone Number:</label><br />
+                        <input type="tel" id="user_phone" name="phone_number" placeholder="  xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    </div>
+                </fieldset>
+                
+                
+                <fieldset>
+                    <div class="group">
+                        <label for="user_password">Password:</label><br />
+                        <input type="password" id="password" name="password" required onkeyup='check();'>
+                    </div>
+
+                    <div class="group">
+                        <label for="user_password_confirm">Confirm Password:</label><br />
+                        <input type="password" id="confirm_password" name="password" required onkeyup='check();'>
+                        <div id='message'></div>
+                    </div>
+                </fieldset>
+                <button id="submit" type="submit" disabled>Submit</button>
+            </form>
+        </div>
     </div>
 
 </body>
+
+<script>
+     var check = function() {
+      if (document.getElementById('password').value ==
+          document.getElementById('confirm_password').value) {
+          document.getElementById('message').style.color = 'white';
+          document.getElementById('message').innerHTML = 'These Passwords Match';
+          document.getElementById('submit').disabled = false;
+      } else {
+      	 document.getElementById('message').style.color = 'white';
+         document.getElementById('message').innerHTML = 'These Passwords Do Not Match';
+         document.getElementById('submit').disabled = true;
+      }
+  }
+</script>
 </html>
