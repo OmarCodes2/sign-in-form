@@ -77,6 +77,7 @@ body {
     object-fit: cover;
     object-position: 0%,0%;
     transform: scaleX(-1);
+    margin: 0;
 }
 
 .quote{
@@ -94,6 +95,7 @@ body {
     margin-left: 8vh;
     margin-bottom: 8vh;
     font-size: 1.5rem;
+    width: 40vw;
 }
 
 button {
@@ -102,7 +104,7 @@ button {
     margin-top: 1vh;
     align-self: center;
     background-color:#801313; 
-    border-radius: 30px;
+    border-radius: 30vh;
     color: white;
     padding: 10px 32px;
     text-align: center;
@@ -123,7 +125,7 @@ button:hover {
 
 form{
     margin: 0;
-    width: 100%;
+    width: 60vw;
     height: 42vh;
     background-color: white;
 
@@ -135,7 +137,7 @@ form{
 }
 input{
     border: solid 2px rgb(0, 0, 0);
-    border-radius: 20px;
+    border-radius: 20vh;
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
     height: 5vh;
@@ -146,11 +148,11 @@ fieldset{
     display: flex;
     gap: 20px;
     justify-content: center;
+    
 
 }
 label{
-    margin: 0.5vw;
-    margin-bottom: 1vh;
+
     font-weight: 700;
     font-family: "Roboto", Geneva, Tahoma, sans-serif;
 }
@@ -177,8 +179,14 @@ label{
 
 .black_knights{
     width: 70%;
-    height: 50%;
+
     color: white;
-    font-size: 4em;
-    font-family: 'Roboto', cursive;
+    font-size: 9vh;
+    font-family: 'Secular One', sans-serif;
+}
+
+.group{
+    display: flex;
+    flex-direction: column;
+    row-gap: -100vh;
 }

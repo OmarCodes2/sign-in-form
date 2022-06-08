@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <title>Sign Up</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Kdam+Thmor+Pro&family=Oswald&family=Poppins:wght@300;400&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Oswald&family=Poppins:wght@300;400&family=Roboto:wght@300&family=Secular+One&display=swap" rel="stylesheet">
 </head>
 <body>
     
@@ -25,9 +25,7 @@
         </div>
         <div class="right_column">
             <div class="quote">
-                What do you do when there is an evil you cannot defeat by just means?
-                Do you stain your hands with evil to destroy evil? Or do you remain steadfastly
-                just and righteous even if it means surrendering to evil?
+                "It’s a waste not to try something that seems fun."
             </div>
 
             <div class="subtitle">
@@ -82,12 +80,12 @@
      var check = function() {
       if (document.getElementById('password').value ==
           document.getElementById('confirm_password').value) {
-          document.getElementById('message').style.color = 'white';
+          document.getElementById('message').style.color = 'green';
           document.getElementById('message').innerHTML = 'These Passwords Match';
           document.getElementById('submit').disabled = false;
       } else {
-      	 document.getElementById('message').style.color = 'white';
-         document.getElementById('message').innerHTML = 'These Passwords Do Not Match';
+      	 document.getElementById('message').style.color = 'red';
+         document.getElementById('message').innerHTML = '*These Passwords Do Not Match';
          document.getElementById('submit').disabled = true;
       }
   }
