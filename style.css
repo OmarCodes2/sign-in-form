@@ -54,8 +54,8 @@ MEYER Reset Done
 body {
     display: flex;
     flex-direction: row;
-    background-color: black;
-    color: white;
+    background-color: rgb(247, 243, 243);
+    color: rgb(0, 0, 0);
 }
 
 .content{
@@ -68,43 +68,47 @@ body {
 }
 
 .right_column{
-    width: 55vw;
+    width: 60vw;
     
 }
 .zero{
     width: 100%;
-    height: 99.9vh;
+    height: 100vh;
     object-fit: cover;
     object-position: 0%,0%;
+    transform: scaleX(-1);
 }
 
 .quote{
-    /* font-size: ; */
-    font-size: 1.5rem;
+
+    font-size: 1.5em;
     font-family: 'Poppins', sans-serif;
     word-wrap: break-word;
-    margin: 40px;
+    margin: 8vh;
     margin-top: 15vh;
     text-align: left;
 }
 
 .subtitle{
     font-family: 'Poppins', sans-serif;
-    margin-left: 40px;
+    margin-left: 8vh;
+    margin-bottom: 8vh;
     font-size: 1.5rem;
 }
 
 button {
-    width: 12vw;
-    margin-top: 20px;
-    background-color:#4b184d; 
-    border-radius: 14px;
+    width: 25vw;
+    height: 8vh;
+    margin-top: 1vh;
+    align-self: center;
+    background-color:#801313; 
+    border-radius: 30px;
     color: white;
     padding: 10px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
+    font-size: 1.6vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
     cursor: pointer;
@@ -118,29 +122,63 @@ button:hover {
 }
 
 form{
-    margin-top: 20px;
-    margin-left: 40px;
+    margin: 0;
+    width: 100%;
+    height: 42vh;
+    background-color: white;
+
     display: flex;
     flex-direction: column;
+    justify-content: center;
     row-gap: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 input{
-    border: solid 2px white;
+    border: solid 2px rgb(0, 0, 0);
     border-radius: 20px;
-    color: white;
-    background-color: black;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     height: 5vh;
-    width: 20vw;
+    width: 25vw;
 }
 
 fieldset{
     display: flex;
     gap: 20px;
+    justify-content: center;
 
 }
 label{
     margin: 0.5vw;
     margin-bottom: 1vh;
     font-weight: 700;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", Geneva, Tahoma, sans-serif;
+}
+
+
+
+.banner{
+    width: 40vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    bottom: 20vh;
+    
+
+}
+.logo{
+    width: 10vw;
+    transform: scaleX(-1);
+}
+
+.black_knights{
+    width: 70%;
+    height: 50%;
+    color: white;
+    font-size: 4em;
+    font-family: 'Roboto', cursive;
 }
